@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滿版顯示 GAS</title>
+    <style>
+        /* 移除瀏覽器預設的邊距，並鎖定寬高為 100% */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* 防止出現雙重滾動條 */
+        }
+
+        /* 讓 iframe 絕對定位並填滿整個畫面 */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* 移除 iframe 的外框線 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 請將 src 替換為你的 GAS 網頁應用程式網址 (結尾通常是 /exec) -->
+    <iframe src="https://script.google.com/macros/s/AKfycbybnDrVk2SOXAqyBrZYnJ5NOc-V6xlLVFebRDICho0dcmh2GIX5_m7_3WJqeV4hmXq4/exec">
+        您的瀏覽器不支援 iframe，請點擊連結開啟。
+    </iframe>
+
+</body>
+</html>
